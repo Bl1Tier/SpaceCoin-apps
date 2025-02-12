@@ -1,0 +1,48 @@
+{
+	"name": "coin-wheel",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cross-env NODE_OPTIONS=--openssl-legacy-provider PORT=3000 HTTPS=true react-scripts start",
+		"build": "cross-env NODE_OPTIONS=--openssl-legacy-provider GENERATE_SOURCEMAP=false react-scripts build",
+		"predeploy": "npm run build",
+		"deploy": "vk-miniapps-deploy"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"react-hot-loader": "^4.13.0",
+		"react-scripts": "^4.0.3"
+	},
+	"dependencies": {
+		"@vkontakte/icons": "^2.48.1",
+		"@vkontakte/vk-bridge": "^2.8.2",
+		"@vkontakte/vkjs": "^1.1.0",
+		"@vkontakte/vkui": "^5.5.5",
+		"babel-eslint": "^10.1.0",
+		"chalk": "^4.1.0",
+		"highcharts": "^9.0.0",
+		"highcharts-react-official": "^3.1.0",
+		"react": "^17.0.2",
+		"react-device-detect": "^2.1.2",
+		"react-dom": "^17.0.2",
+		"react-jsx-highcharts": "^5.0.0",
+		"socket.io-client": "^4.3.2",
+		"telegraf": "^4.12.2"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
